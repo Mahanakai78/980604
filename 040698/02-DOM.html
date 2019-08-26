@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <style>
+    main{
+        margin: 0 auto;
+        max-width: 500px;
+        background: #f1f1f1;
+    }
+    button{
+        outline: none;
+        border: none;
+        padding: 10px 25px;
+        cursor: pointer;
+        margin: 10px;
+        background: rgba(0,0,0,.8);
+        color: #fff;
+    }
+    button:hover{
+        background: rgba(0,0,0,.5);
+    }
+    </style>
+    <script>
+    $(function(){
+        $("button").click(function(){
+            $("ul").append("<li>added item</li>");
+        });
+    });
+    </script>
+</head>
+<body>
+    <main>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <button>add</button>
+    </main>
+</body>
+</html>

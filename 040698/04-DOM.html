@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <style>
+        main {
+            margin: 0 auto;
+            max-width: 400px;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                let input = $("input").val();
+             $("p").prepend("name:"+input+"<br>");
+             
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main> <input type="text" id="input"><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae reprehenderit inventore, totam illum
+            reiciendis iusto quod blanditiis asperiores expedita tempore quam nesciunt sit dolorum corrupti voluptates!
+            Nesciunt, reiciendis sapiente.</p>
+        <button>prepend</button>
+    </main>
+</body>
+
+</html>

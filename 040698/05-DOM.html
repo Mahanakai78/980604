@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <DOM-Append>
+    </title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <style>
+        main {
+            margin: 0 auto;
+            max-width: 400px;
+            background: #f3f3f3;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                let txt1="<p>text sample!</p>";
+                let txt2=$("<article></article>").text("some text!");
+                let txt3=document.createElement("p").innerText="another text";
+                $("article").append(txt1, txt2, txt3);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <main>
+       <article></article>
+        <button>ok</button>
+    </main>
+
+</body>
+
+</html>
